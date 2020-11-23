@@ -19,7 +19,7 @@
   }
   
   .vertical-menu a.active {
-    background-color: #00ebd5; /* Add a green color to the "active/current" link */
+    background-color: #00ebd5; /*Add a green color to the "active/current" link*/
     color: black;
   }
 
@@ -43,15 +43,27 @@
 background-color: #d9f4ef !important;
 }
 
+.fa-linkedin{
+  font-size:24px;
+} 
+  
+.fa-google{
+  font-size:22px;
+  margin-top: 1.5px;
+} 
 
 /* Phone */
 @media (max-width:375px) {
+  .vertical-menu {
+      width: 160px;
+      display: none;
+  }
     .drop {
         display: block;
-    }
-    .vertical-menu {
-        width: 160px;
-        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 2;
     }
     .hori-menu {
         display: block;
@@ -60,10 +72,9 @@ background-color: #d9f4ef !important;
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0 0 52px 0;
+        padding: 0 0 0 0;
         background-color: #d9f4ef;
         font-family: 'Asap Condensed', sans-serif;
-        
       }
       
       li {
@@ -111,5 +122,15 @@ background-color: #d9f4ef !important;
         display: block;
         width: 25em;
       }
+
+      .fa-linkedin{
+        font-size:22px;
+    } 
+        
+    .fa-google{
+        font-size:18px;
+        margin-top: 0.8px;
+        margin-left: -0.6em;
+    } 
 }
 

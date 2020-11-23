@@ -7,3 +7,15 @@ for(let item of links) {
     //$('html, body').animate({scrollTop: $(name).offset().top -65 }, 1000);
   })
 }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y = document.getElementById("menu")
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.backgroundColor= "#d9f4ef";
+  } else {
+    x.style.display = "block";
+    y.style.backgroundColor= "#00ebd5";
+  }
+}
